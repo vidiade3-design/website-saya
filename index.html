@@ -10,7 +10,11 @@
 .testimonials {
     padding: 60px 20px;
     background-color: #ffffff;
-    text-align: center;
+    text-align: center; /* Memastikan judul h2 ke tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memaksa semua konten (termasuk grid) ke tengah */
+    width: 100%;
 }
  
 .testimonials h2 {
@@ -18,6 +22,8 @@
     font-size: 2rem;
     margin-bottom: 40px;
     font-weight: 700;
+    text-align: center;
+    width: 100%;
 }
 
 .testimonial-grid {
