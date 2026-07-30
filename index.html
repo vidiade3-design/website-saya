@@ -4,7 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Investasi Emas - 1011gold</title>
-  <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ /* --- Styling Section Keunggulan (Features) --- */
+.features {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.features h2 {
+    color: #0d47a1;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.features .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #ffffff;
+    flex: 1;
+    min-width: 250px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-top: 4px solid #ffd700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(13, 71, 161, 0.15);
+}
+
+.card .icon-box {
+    width: 60px;
+    height: 60px;
+    background: #e8f0fe;
+    color: #0d47a1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    font-size: 24px;
+    border: 2px solid #ffd700;
+}
+
+.card h3 {
+    color: #0d47a1;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+} 
+
     html {
       scroll-behavior: smooth;
     }
@@ -361,24 +426,39 @@ nav .logo img {
     <a href="https://wa.me/6285730091998?text=Halo%201011gold,%20saya%20ingin%20jual/buyback%20emas" target="_blank" class="btn">Jual Emas Sekarang</a>
   </section>
 
-  <!-- Section Keunggulan -->
-  <section id="keunggulan" style="padding: 50px 20px; max-width: 1000px; margin: 0 auto; text-align: center;">
-    <h2 style="color: #0d47a1; margin-bottom: 30px;">Mengapa Memilih 1011gold?</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-      <div style="flex: 1; min-width: 250px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-        <h3 style="color: #0d47a1; margin-bottom: 10px;">100% Asli</h3>
-        <p style="color: #666; font-size: 14px;">Emas Antam bersertifikat resmi dan terjamin keasliannya.</p>
-      </div>
-      <div style="flex: 1; min-width: 250px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-        <h3 style="color: #0d47a1; margin-bottom: 10px;">Harga Transparan</h3>
-        <p style="color: #666; font-size: 14px;">Harga buyback & jual selalu terbarui sesuai pergerakan pasar.</p>
-      </div>
-      <div style="flex: 1; min-width: 250px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-        <h3 style="color: #0d47a1; margin-bottom: 10px;">Proses Cepat</h3>
-        <p style="color: #666; font-size: 14px;">Transaksi praktis langsung via WhatsApp dengan respon tanggap.</p>
-      </div>
+<!-- Section Keunggulan -->
+<section id="keunggulan" class="features">
+    <h2>Mengapa Memilih 1011gold?</h2>
+    
+    <div class="grid-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="icon-box">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>100% Asli</h3>
+            <p>Emas Antam bersertifikat resmi dan terjamin keasliannya.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="icon-box">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Harga Transparan</h3>
+            <p>Harga buyback & jual selalu terbarui sesuai pergerakan pasar.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="icon-box">
+                <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Proses Cepat</h3>
+            <p>Transaksi praktis langsung via WhatsApp dengan respon tanggap.</p>
+        </div>
     </div>
-  </section>
+</section>
 
   <!-- Footer -->
   <footer style="background: #0d47a1; color: white; text-align: center; padding: 20px; margin-top: 40px;">
