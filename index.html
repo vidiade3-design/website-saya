@@ -568,6 +568,7 @@ nav .logo img {
         <!-- Card Testimoni 3 -->
         <div class="testimonial-card">
             <div class="stars">★★★★★</div>
+          <div class="testimonial-stars">★★★★★</div>
             <p>"Pelayanan customer service cepat dan ramah. Merasa tenang simpan aset di sini."</p>
             <div class="user-info">
                 <h4>Andi Wijaya</h4>
@@ -583,6 +584,56 @@ nav .logo img {
   <footer style="background: #0d47a1; color: white; text-align: center; padding: 20px; margin-top: 40px;">
     <p>&copy; 2026 1011gold - Toko Emas Antam Terpercaya</p>
   </footer>
+<style>
+/* --- 1. Font Modern & Spacing General --- */
+body {
+    font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+}
 
+/* --- 2. Micro-Interaction (Hover Effect) --- */
+.features-grid > div, 
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.features-grid > div:hover, 
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(13, 71, 161, 0.12);
+}
+
+/* --- 3. Tombol CTA (Jual Emas Sekarang) --- */
+.cta-button, 
+button.cta {
+    background: linear-gradient(135deg, #ffd700, #ffa000) !important;
+    color: #0d47a1 !important;
+    font-weight: 700 !important;
+    border: none !important;
+    padding: 12px 28px !important;
+    border-radius: 30px !important;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover, 
+button.cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+}
+
+/* --- 4. Rating Bintang Emas --- */
+.testimonial-stars {
+    color: #ffd700;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+</style>
 </body>
 </html>
